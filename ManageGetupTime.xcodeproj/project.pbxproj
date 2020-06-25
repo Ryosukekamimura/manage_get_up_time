@@ -13,9 +13,12 @@
 		92810DB024A300B100B9B78D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92810DAF24A300B100B9B78D /* Assets.xcassets */; };
 		92810DB324A300B100B9B78D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92810DB224A300B100B9B78D /* Preview Assets.xcassets */; };
 		92810DB624A300B100B9B78D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92810DB424A300B100B9B78D /* LaunchScreen.storyboard */; };
+		9F4655BBAE6299D77E832C67 /* Pods_ManageGetupTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A06CE94A864480E91907741 /* Pods_ManageGetupTime.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		127162F42B1956F545C5F1B6 /* Pods-ManageGetupTime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ManageGetupTime.debug.xcconfig"; path = "Target Support Files/Pods-ManageGetupTime/Pods-ManageGetupTime.debug.xcconfig"; sourceTree = "<group>"; };
+		2A06CE94A864480E91907741 /* Pods_ManageGetupTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ManageGetupTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		92810DA624A300B100B9B78D /* ManageGetupTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ManageGetupTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92810DA924A300B100B9B78D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92810DAB24A300B100B9B78D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		92810DB224A300B100B9B78D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		92810DB524A300B100B9B78D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92810DB724A300B100B9B78D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C32A6CD11058BF5F1AF317C3 /* Pods-ManageGetupTime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ManageGetupTime.release.xcconfig"; path = "Target Support Files/Pods-ManageGetupTime/Pods-ManageGetupTime.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F4655BBAE6299D77E832C67 /* Pods_ManageGetupTime.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		619FAD9E3DF65225FBF5AF89 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A06CE94A864480E91907741 /* Pods_ManageGetupTime.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DB0C0FC9BD2276BB9592BD0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				127162F42B1956F545C5F1B6 /* Pods-ManageGetupTime.debug.xcconfig */,
+				C32A6CD11058BF5F1AF317C3 /* Pods-ManageGetupTime.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		92810D9D24A300B100B9B78D = {
 			isa = PBXGroup;
 			children = (
 				92810DA824A300B100B9B78D /* ManageGetupTime */,
 				92810DA724A300B100B9B78D /* Products */,
+				7DB0C0FC9BD2276BB9592BD0 /* Pods */,
+				619FAD9E3DF65225FBF5AF89 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92810DBA24A300B100B9B78D /* Build configuration list for PBXNativeTarget "ManageGetupTime" */;
 			buildPhases = (
+				4A1245CA701AEC49E58E83DD /* [CP] Check Pods Manifest.lock */,
 				92810DA224A300B100B9B78D /* Sources */,
 				92810DA324A300B100B9B78D /* Frameworks */,
 				92810DA424A300B100B9B78D /* Resources */,
+				1A0750B8CA48ADB72D9318DD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,6 +167,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A0750B8CA48ADB72D9318DD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ManageGetupTime/Pods-ManageGetupTime-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ManageGetupTime/Pods-ManageGetupTime-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ManageGetupTime/Pods-ManageGetupTime-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A1245CA701AEC49E58E83DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ManageGetupTime-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		92810DA224A300B100B9B78D /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		92810DBB24A300B100B9B78D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 127162F42B1956F545C5F1B6 /* Pods-ManageGetupTime.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +372,7 @@
 		};
 		92810DBC24A300B100B9B78D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C32A6CD11058BF5F1AF317C3 /* Pods-ManageGetupTime.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
